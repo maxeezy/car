@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/dan-gold-kARZuSYMfrA-unsplash.jpg'), center, no-repeat;
+    background-size: cover;
+}
+
+.header{
+    padding-top: 35px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.header-left{
+    font-size: 30px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+
+.main-content{
+    padding-top: 150px;
+}
+
+.title-first{
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-second{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 280px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    outline: none;
+}
+.btn:hover {
+    text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+    color: #FFF;
+    border: 4px solid #000;
+    box-shadow:0px 0px 0px 1px #000 inset;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.effect01:hover {
+    border: 4px solid #666;
+    background-color: #FFF;
+    box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01 span {
+    transition: all 0.2s ease-out;
+    z-index: 2;
+}
+.effect01:hover span{
+    letter-spacing: 0.13em;
+    color: #333;
+}
+
+/*highlight*/
+.effect01:after {
+    background: #FFF;
+    border: 0px solid #000;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .8;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    width: 50px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+    z-index: 1;
+}
+.effect01:hover:after {
+    background: #FFF;
+    border: 20px solid #000;
+    opacity: 0;
+    left: 120%;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+.triggers{
+    display: flex;
+    justify-content: center;
+}
+
+.trigger-x{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid goldenrod;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.trigger-x:last-child{
+    margin-right: 0;
+}
+
+form{
+    display: block;
+    width: 80%;
+    background-color: #fff0bdf0;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    padding: 35px;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-title{
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+.form-title-two{
+    margin-bottom: 24px;
+    font-size: 17px;
+    text-align: center;
+}
+label{
+    margin-right: 10px;
+}
+label:last-child{
+    margin-right: 0;
+}
+
+label>input{
+    margin-right: 5px;
+}
+
+.inputs{
+    margin-bottom: 20px;
+}
+.wrap{
+    margin-bottom: 10px;
+}
+
+.text-input{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
